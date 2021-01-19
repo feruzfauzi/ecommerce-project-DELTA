@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Glovic India</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid_container">
+        <header class="header">
+            <div class="brand">
+                <button class="brand-button" onclick="openMenu()">
+                    &#9776;
+                </button>
+                <a href="index.html">Glovic</a>
+            </div>
+            <div class="header-links">
+                <a href="cart.html">Cart</a>
+                <a href="signin.html">Sign In</a>
+            </div>
+        </header>
+
+        <aside class="side-bar">
+           <h3>Shopping Categories</h3>
+           <button class="sidebar-close-button" onclick="closeMenu()">x</button>
+           <ul>
+               <li><a href="index.html">Pants</a></li>
+               <li><a href="index.html">Shirts</a></li>
+           </ul>
+        </aside>
+
+        <main class="main">
+            <div class="content">
+                <ul class="products">
+                    <li>
+                        <div class="product">
+                            <img src="1.jpg" alt="product" class="product-image">
+                            <div class="product-name">
+                                <a href="product.html">Slim Shirt</a>
+                            </div>
+                            <div class="product-brand">Nike</div>
+                            <div class="price">$60</div>
+                            <div class="product-rating">4.5 stars(10 reviews)</div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+         
+        </main>
+        <footer class="footer">
+            All Rights Reserved
+        </footer>
+    </div>
+    <script>
+        function openMenu(){
+            document.querySelector(".side-bar").classList.add("open");
+        }
+        function closeMenu(){
+            document.querySelector(".side-bar").classList.remove("open");
+        }
+    </script>
+</body>
+</html>
